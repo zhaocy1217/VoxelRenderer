@@ -16,3 +16,6 @@
 [submodule "third/glTF"]
 	path = third/glTF
 	url = https://github.com/KhronosGroup/glTF.git
+[submodule "third/glfw"]
+	path = third/glfw
+	url = https://github.com/glfw/glfw.git
