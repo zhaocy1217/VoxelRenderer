@@ -1,0 +1,74 @@
+{
+    "entryPoints" : [
+        {
+            "name" : "main",
+            "mode" : "frag"
+        }
+    ],
+    "types" : {
+        "_25" : {
+            "name" : "builtin_props",
+            "members" : [
+                {
+                    "name" : "model",
+                    "type" : "mat4",
+                    "offset" : 0,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "view",
+                    "type" : "mat4",
+                    "offset" : 64,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "proj",
+                    "type" : "mat4",
+                    "offset" : 128,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "_builtin_light_dir",
+                    "type" : "vec3",
+                    "offset" : 192
+                },
+                {
+                    "name" : "_builtin_camera_posi",
+                    "type" : "vec3",
+                    "offset" : 208
+                }
+            ]
+        }
+    },
+    "inputs" : [
+        {
+            "type" : "vec2",
+            "name" : "fragTexCoord",
+            "location" : 0
+        }
+    ],
+    "outputs" : [
+        {
+            "type" : "vec4",
+            "name" : "outColor",
+            "location" : 0
+        }
+    ],
+    "textures" : [
+        {
+            "type" : "sampler2D",
+            "name" : "_BaseMap",
+            "set" : 0,
+            "binding" : 2
+        }
+    ],
+    "ubos" : [
+        {
+            "type" : "_25",
+            "name" : "builtin_props",
+            "block_size" : 220,
+            "set" : 0,
+            "binding" : 1
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "entryPoints" : [
+        {
+            "name" : "main",
+            "mode" : "vert"
+        }
+    ],
+    "types" : {
+        "_11" : {
+            "name" : "gl_PerVertex",
+            "members" : [
+                {
+                    "name" : "gl_Position",
+                    "type" : "vec4"
+                },
+                {
+                    "name" : "gl_PointSize",
+                    "type" : "float"
+                },
+                {
+                    "name" : "gl_ClipDistance",
+                    "type" : "float",
+                    "array" : [
+                        1
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ]
+                },
+                {
+                    "name" : "gl_CullDistance",
+                    "type" : "float",
+                    "array" : [
+                        1
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ]
+                }
+            ]
+        },
+        "_18" : {
+            "name" : "builtin_props",
+            "members" : [
+                {
+                    "name" : "model",
+                    "type" : "mat4",
+                    "offset" : 0,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "view",
+                    "type" : "mat4",
+                    "offset" : 64,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "proj",
+                    "type" : "mat4",
+                    "offset" : 128,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "_builtin_light_dir",
+                    "type" : "vec3",
+                    "offset" : 192
+                },
+                {
+                    "name" : "_builtin_camera_posi",
+                    "type" : "vec3",
+                    "offset" : 208
+                }
+            ]
+        }
+    },
+    "inputs" : [
+        {
+            "type" : "vec3",
+            "name" : "position",
+            "location" : 0
+        },
+        {
+            "type" : "vec3",
+            "name" : "normal",
+            "location" : 3
+        },
+        {
+            "type" : "vec3",
+            "name" : "tangent",
+            "location" : 4
+        },
+        {
+            "type" : "vec4",
+            "name" : "color",
+            "location" : 1
+        },
+        {
+            "type" : "vec2",
+            "name" : "texcoord",
+            "location" : 2
+        }
+    ],
+    "outputs" : [
+        {
+            "type" : "vec3",
+            "name" : "positionws",
+            "location" : 5
+        },
+        {
+            "type" : "vec3",
+            "name" : "normalws",
+            "location" : 2
+        },
+        {
+            "type" : "vec3",
+            "name" : "tangentws",
+            "location" : 3
+        },
+        {
+            "type" : "vec3",
+            "name" : "binormalws",
+            "location" : 4
+        },
+        {
+            "type" : "vec3",
+            "name" : "fragColor",
+            "location" : 0
+        },
+        {
+            "type" : "vec2",
+            "name" : "fragTexCoord",
+            "location" : 1
+        }
+    ],
+    "ubos" : [
+        {
+            "type" : "_18",
+            "name" : "builtin_props",
+            "block_size" : 220,
+            "set" : 0,
+            "binding" : 0
+        }
+    ]
+}

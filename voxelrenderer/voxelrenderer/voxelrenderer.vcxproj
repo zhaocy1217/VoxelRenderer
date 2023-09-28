@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{C79D7ADD-29B8-4ACB-BCE0-C83D9CC086A5}</ProjectGuid>
+    <RootNamespace>voxelrendering</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../third/glfw_lib/include;../../third\assimp_lib\include;../../third\glm;../../includes;E:\vkSDK\1.2.176.1\Include;../../third\assimp\build\include;../../;../../third\assimp\contrib;../../third\tinyobjloader;../../third\yaml-cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../..\third\glfw_lib\lib-vc2022;../..\third\assimp\build\bin\Debug;E:\vkSDK\1.2.176.1\Lib;../../third\tinyobjloader\build\Debug;../../third\yaml-cpp\build\Debug;../../third\yaml-cpp\build\Debug\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;glfw3.lib;vulkan-1.lib;tinyobjloader.lib;yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../third/glfw_lib/include;../../third\assimp_lib\include;../../third\glm;../../includes;E:\vkSDK\1.2.176.1\Include;../../third\assimp\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../..\third\glfw_lib\lib-vc2022;../..\third\assimp\build\bin\Release;E:\vkSDK\1.2.176.1\Lib;../..\third\assimp\build\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mt.lib;glfw3.lib;vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;YAML_CPP_STATIC_DEFINE;VALIDATION_LAYER;GLM_FORCE_LEFT_HANDED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../third/glfw\include;../../third\glm;../../includes;../../third\assimp\contrib;../../third\assimp\include;../../third\assimp\build\include;../../third\tinyobjloader;../../third/imgui/;../../third\yaml-cpp\include;../../third/spirv-cross\include;$(VK_SDK_PATH)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;../..\third\glfw\Build\src\$(Configuration);../..\third\assimp\build\bin\$(Configuration);../../third\tinyobjloader\build\$(Configuration);../../third\yaml-cpp\build\$(Configuration);../../third\assimp\build\contrib\zlib\$(Configuration);../../third\spirv-cross\lib;../../third/assimp\build\lib\$(Configuration);$(VK_SDK_PATH)/Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimpd.lib;glfw3.lib;vulkan-1.lib;tinyobjloader.lib;yaml-cppd.lib;zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CONSOLE;YAML_CPP_STATIC_DEFINE;GLM_FORCE_LEFT_HANDED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../third/glfw\include;../../third\glm;../../includes;../../third\assimp\contrib;../../third\assimp\include;../../third\assimp\build\include;../../third\tinyobjloader;../../third/imgui/;../../third\yaml-cpp\include;../../third/spirv-cross\include;$(VK_SDK_PATH)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;../..\third\glfw\Build\src\$(Configuration);../..\third\assimp\build\bin\$(Configuration);../../third\tinyobjloader\build\$(Configuration);../../third\yaml-cpp\build\$(Configuration);../../third\assimp\build\contrib\zlib\$(Configuration);../../third\spirv-cross\lib;../../third/assimp\build\lib\$(Configuration);$(VK_SDK_PATH)/Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;glfw3.lib;vulkan-1.lib;tinyobjloader.lib;yaml-cpp.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\AssetItem.cpp" />
+    <ClCompile Include="..\..\src\BlurAndACESPostProcessing.cpp" />
+    <ClCompile Include="..\..\src\Camera.cpp" />
+    <ClCompile Include="..\..\src\Defines.cpp" />
+    <ClCompile Include="..\..\src\GfxHandlerInterface.cpp" />
+    <ClCompile Include="..\..\src\GfxRenderDataset.cpp" />
+    <ClCompile Include="..\..\src\GfxTexture.cpp" />
+    <ClCompile Include="..\..\src\GComp.cpp" />
+    <ClCompile Include="..\..\src\GLTFReader.cpp" />
+    <ClCompile Include="..\..\src\GObject.cpp" />
+    <ClCompile Include="..\..\src\Material.cpp" />
+    <ClCompile Include="..\..\src\MemAllocator.cpp" />
+    <ClCompile Include="..\..\src\Mesh.cpp" />
+    <ClCompile Include="..\..\src\MeshRendererComp.cpp" />
+    <ClCompile Include="..\..\src\PostProcessing.cpp" />
+    <ClCompile Include="..\..\src\RenderContext.cpp" />
+    <ClCompile Include="..\..\src\RendererComp.cpp" />
+    <ClCompile Include="..\..\src\VkPass.cpp" />
+    <ClCompile Include="..\..\src\VkRenderer.cpp" />
+    <ClCompile Include="..\..\src\VkPassGroup.cpp" />
+    <ClCompile Include="..\..\src\Resources.cpp" />
+    <ClCompile Include="..\..\src\Shader.cpp" />
+    <ClCompile Include="..\..\src\test.cpp" />
+    <ClCompile Include="..\..\src\TestComp.cpp" />
+    <ClCompile Include="..\..\src\Texture.cpp" />
+    <ClCompile Include="..\..\src\Transform.cpp" />
+    <ClCompile Include="..\..\src\Util.cpp" />
+    <ClCompile Include="..\..\src\VkAssetWrapper.cpp" />
+    <ClCompile Include="..\..\src\VkPool.cpp" />
+    <ClCompile Include="..\..\src\VkHelper.cpp" />
+    <ClCompile Include="..\..\src\Window.cpp" />
+    <ClCompile Include="..\..\src\World.cpp" />
+    <ClCompile Include="..\..\third\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\third\imgui\backends\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="..\..\third\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\third\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\third\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\third\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\third\imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\includes\AssetItem.h" />
+    <ClInclude Include="..\..\includes\BlurAndACESPostProcessing.h" />
+    <ClInclude Include="..\..\includes\Camera.h" />
+    <ClInclude Include="..\..\includes\Defines.h" />
+    <ClInclude Include="..\..\includes\GfxHandlerInterface.h" />
+    <ClInclude Include="..\..\includes\GfxRenderDataset.h" />
+    <ClInclude Include="..\..\includes\GfxTexture.h" />
+    <ClInclude Include="..\..\includes\GComp.h" />
+    <ClInclude Include="..\..\includes\GLTFReader.h" />
+    <ClInclude Include="..\..\includes\GObject.h" />
+    <ClInclude Include="..\..\includes\ImGuiImpl.h" />
+    <ClInclude Include="..\..\includes\json.hpp" />
+    <ClInclude Include="..\..\includes\MemAllocator.h" />
+    <ClInclude Include="..\..\includes\MeshRendererComp.h" />
+    <ClInclude Include="..\..\includes\PostProcessing.h" />
+    <ClInclude Include="..\..\includes\RenderContext.h" />
+    <ClInclude Include="..\..\includes\RendererComp.h" />
+    <ClInclude Include="..\..\includes\VkPass.h" />
+    <ClInclude Include="..\..\includes\VkRenderer.h" />
+    <ClInclude Include="..\..\includes\VkPassGroup.h" />
+    <ClInclude Include="..\..\includes\Resources.h" />
+    <ClInclude Include="..\..\includes\TestComp.h" />
+    <ClInclude Include="..\..\includes\Timer.h" />
+    <ClInclude Include="..\..\includes\Transform.h" />
+    <ClInclude Include="..\..\includes\Util.h" />
+    <ClInclude Include="..\..\includes\VkAssetWrapper.h" />
+    <ClInclude Include="..\..\includes\VkPool.h" />
+    <ClInclude Include="..\..\includes\VkHelper.h" />
+    <ClInclude Include="..\..\includes\Window.h" />
+    <ClInclude Include="..\..\includes\Material.h" />
+    <ClInclude Include="..\..\includes\Mesh.h" />
+    <ClInclude Include="..\..\includes\Shader.h" />
+    <ClInclude Include="..\..\includes\Texture.h" />
+    <ClInclude Include="..\..\includes\World.h" />
+    <ClInclude Include="..\..\third\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="..\..\third\imgui\backends\imgui_impl_vulkan.h" />
+    <ClInclude Include="..\..\third\imgui\imgui.h" />
+    <ClInclude Include="..\..\third\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\third\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\third\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\third\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,16 @@
+m_shader: assets/shaders/simple
+m_renderType: Opaque
+m_textureParams:
+  _BaseMap: assets/textures/basemap.png
+  _NormalMap: assets/textures/normal.png
+  _EnvMap: assets/textures/cubemap.png
+  _IBLBrdfMap: assets/textures/brdf_lut.png
+  _RoughnessMap: assets/textures/roughness.jpg
+m_floatParams:
+  _Test:
+    - 2
+  _Color:
+    - 2
+    - 2
+    - 2
+    - 2

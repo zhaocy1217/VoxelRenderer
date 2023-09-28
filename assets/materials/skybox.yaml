@@ -1,0 +1,12 @@
+m_shader: assets/shaders/skybox
+m_renderType: Opaque
+m_textureParams:
+  _EnvMap2: assets/textures/cubemap.png
+m_floatParams:
+  _Test:
+    - 2
+  _Color:
+    - 2
+    - 2
+    - 2
+    - 2

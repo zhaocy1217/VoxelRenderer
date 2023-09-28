@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="includes">
+      <UniqueIdentifier>{1796e091-b4f6-43d9-9ce0-3fec895299b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9f92fef2-89cd-4e3e-aaf5-2509160290e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ImGui">
+      <UniqueIdentifier>{5693a60e-7d92-4566-98ec-e89cc89e657f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ImGui\Backends">
+      <UniqueIdentifier>{c25c5168-5ddb-4848-85ec-6306a70464bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ImGui">
+      <UniqueIdentifier>{40558335-2be0-43d3-a53a-cb12159b6673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ImGui\Backends">
+      <UniqueIdentifier>{f3c84e3a-fc0e-4ab1-8a5a-1caeea590ab7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\AssetItem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Defines.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GComp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Material.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkPassGroup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkPass.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkRenderer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Resources.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Shader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TestComp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Texture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Transform.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkHelper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkPool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VkAssetWrapper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\World.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GfxTexture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GfxRenderDataset.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RendererComp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RenderContext.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PostProcessing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\backends\imgui_impl_vulkan.cpp">
+      <Filter>src\ImGui\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\imgui.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\imgui_demo.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\imgui_draw.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\imgui_widgets.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\imgui_tables.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>src\ImGui\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BlurAndACESPostProcessing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MemAllocator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GfxHandlerInterface.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MeshRendererComp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GLTFReader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\includes\AssetItem.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Camera.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Defines.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GComp.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GObject.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Material.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Mesh.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkPassGroup.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkPass.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkRenderer.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Resources.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Shader.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\TestComp.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Texture.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Transform.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Util.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkHelper.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkPool.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Window.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\json.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\VkAssetWrapper.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GfxHandlerInterface.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\Timer.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\World.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GfxTexture.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GfxRenderDataset.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\RendererComp.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\RenderContext.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\MeshRendererComp.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\PostProcessing.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\ImGuiImpl.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\imgui.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\backends\imgui_impl_vulkan.h">
+      <Filter>includes\ImGui\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\imgui_internal.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\imstb_rectpack.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\imstb_textedit.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\imstb_truetype.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third\imgui\backends\imgui_impl_glfw.h">
+      <Filter>includes\ImGui\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\BlurAndACESPostProcessing.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\MemAllocator.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\includes\GLTFReader.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
